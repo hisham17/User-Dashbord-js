@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>User Dashboard</h1>
+        <button id="themeBtn">🌙</button>
+      </div>
+
+      <!-- Search -->
+      <input type="text" id="searchInput" placeholder="Search by name..." />
+
+      <!-- Filter -->
+      <select id="roleFilter">
+        <option value="All">All</option>
+        <option value="Admin">Admin</option>
+        <option value="Student">Student</option>
+        <option value="Designer">Designer</option>
+        <option value="Editor">Editor</option>
+      </select>
+
+      <!-- Add User -->
+      <div class="form">
+        <input type="text" id="nameInput" placeholder="Name" />
+        <input type="number" id="ageInput" placeholder="Age" />
+        <input type="text" id="roleInput" placeholder="Role" />
+        <button id="addBtn">Add User</button>
+      </div>
+
+      <!-- Users List -->
+      <div id="usersList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
